@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ItaewonClass x QT.21|BEST</title>
+  <style>
+    *{ margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    :root{
+        --maincolor:rgb(19, 17, 17) ;
+    }
+    html{
+        background: #fafafa;
+    }
+    
+    #menu {
+        width: 100%;
+        height: 100px;   
+       
+    }
+    #menu .men{
+        list-style-type: none;
+        height: 100%;
+        display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #menu .men>li{
+        height: 100%;
+        line-height: 34px;
+        letter-spacing: 0.7px;
+        float:left;
+        text-align: center;
+        text-transform: uppercase;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        color: rgb(19, 17, 17);
+        font-size: 1.3rem;
+        padding:31px 20px ;
+        position: relative;
+    
+    }
+    
+    
+    #menu .men>li>a {
+        color:var(--maincolor) ;
+        text-decoration: none;
+    }
+    #menu .men>li:hover{
+        color: black;
+        box-shadow: 0 4px 8px 0 #008080, 0 6px 20px 0 #008080;
+    }
+    #menu .men>li:hover>a{
+        color: var(--maincolor);
+    }
+    #menu .men>li>ul{
+        list-style-type: none;
+        width: 200px;
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        display:none;
+    }
+    #menu .men>li:hover >ul{
+        display: block;
+        padding: 18px 0;
+    }
+    #menu .men>li>ul>li{
+        font-size: 1.0rem;
+        text-transform: capitalize;
+        font-weight: normal;
+        height: 36px;
+        line-height: 36px;
+        background:white ;
+        color: var(--maincolor);
+        text-align: left;
+        padding: 0px 10px;
+        white-space: nowrap;
+        position: relative;
+        text-overflow: ellipsis;
+    }
+    #menu .men>li>ul>li:hover{
+        color: #008080;
+        font-weight: bold;  
+    }
+#be{
+    margin-left: 5%;
+    margin-right: 5%;
+
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    color:black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 35px;
+
+}
+#be>h3{
+    background: rgba(73,179,170, 0.8);
+  padding: 10px 30px;  \ position: relative;
+  
+
+}
+
+#be>p{
+    color: #008080;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+#image{
+    width: 100%;
+    height: 1100px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#image img{
+width: 80%;
+height: auto;
+display: block;
+}
+
+#contact{
+    border-top: rgba(73,179,170, 0.8) solid 2px ;
+    height: 175px;
+    font-size: 1.2rem;
+    margin-top: 170px;
+}
+#contact .leftcont{
+    float: left;
+    margin-top: 15px;
+    color: #008080;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 21.5%;
+    
+}
+#contact .leftcont>img{
+    width: 57px;
+    height: 46px;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+#contact .rightcont{
+    float: left;
+    margin-top: 15px;
+    color: #008080;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left:10%;
+    line-height: 30px;
+}
+#contact .rightcont h3{
+    display: inline-block;
+}
+#footer{
+    height: 135px;
+    font-size: 1rem;
+    background: rgba(73,179,170, 0.8);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   padding-left:21.8%;
+   padding-top: 15px;
+   float: left;
+   display: block;
+   width: 100%;
+}
+</style>
+ 
+
+</head>
+<body>
+    <div id="menu">
+        <ul class="men">
+            <li>About
+                <ul class="men1">
+                    <li>Story</li>
+                    <li>Adwards 2020</li>
+                </ul>
+            </li>
+            <li>More
+                <ul class="men2">
+                    <li>Cast</li>
+                    <li>Behind the scenes</li>
+                </ul>
+            </li>
+            <li><a href="index.HTML"><img src="logo1.jpg" alt="ITAEWON CLASS" style="width: 135.4px; height: 86px; border-radius: 50px;" ></a></li>
+            <li class="ost"><a href="OST.html">OST</a></li>
+            <li><a href="BEST.html">Best</a></li>
+        </ul>
+    </div>
+
+  <div id="be">
+      <h3>Best scenes ever</h3>
+     
+      <p>Each shot can be an unforgettalbe memory in your mind</p>
+  </div>
+     
+
+  <div id="image">
+      <img class="im" src="be2.jpg" alt="">
+      <img class="im" src="be3.jpg" alt="">
+      <img src="be1.jpg" class="im" alt="">
+      <img src="be5.jpg" alt="" class="im">
+      <img src="be6.jpg" alt="" class="im">
+  </div>
+  <script>
+    var slideIndex = 0;
+carousel();
+
+function carousel() {
+var i;
+var x = document.getElementsByClassName("im");
+for (i = 0; i < x.length; i++) {
+x[i].style.display = "none";
+}
+slideIndex++;
+if (slideIndex > x.length) {slideIndex = 1}
+x[slideIndex-1].style.display = "block";
+setTimeout(carousel, 2000); // Change image every 3 seconds
+}
+</script>
+
+<div id="contact">
+    <div class="leftcont">
+        <h3>Follow us</h3>
+        <img src="cont1-removebg-preview.png" alt="" >
+        <img src="cont2-removebg-preview.png" alt="">
+        <img src="cont3-removebg-preview.png" alt="">
+        <p>In the long-run, see us on Apps, both IOS or Android</p>
+    </div>
+    <div class="rightcont">
+        <h3>Daily Update</h3>
+        <p>Subcribe for more news of Korean films and culture</p>
+    <input type="text" placeholder="   Your email" style="height: 40px; width: 320px; border-radius: 8px; border: black solid 2px;"> <button style="height: 40px; background-color: rgba(73,179,170, 0.8);  width: 100px; border-radius: 8px; border: black solid 2px; font-weight: bold;">Subcribe</button>
+    <p>We respect your privacy. Have good time darling!</p>
+    </div>
+</div>
+<div id="footer">
+    <p>QTcetera Co., Ltd</p>
+    <p>Tax code: 0314912825</p>
+    <p>Adress: 58 Phan Boi Chau, Ben Thanh Ward, 1st District, Ho Chi Minh City, Vietnam | Email: operations@qtcetera.com</p>
+    <p>Tel: 0286 286 2989 | © QTcetera 2021 . All Rights Reserved. Privacy Policy</p>
+</div>
+<body>
+</html>
